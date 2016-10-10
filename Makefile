@@ -41,7 +41,7 @@ CORE_VERSION=	${CORE_COMMIT:C/-.*$//1}
 CORE_HASH=	${CORE_COMMIT:C/^.*-//1}
 .endif
 
-CORE_ABI?=	16.7
+CORE_ABI?=	17.1
 
 _FLAVOUR!=	if [ -f ${OPENSSL} ]; then ${OPENSSL} version; fi
 FLAVOUR?=	${_FLAVOUR:[1]}
@@ -97,24 +97,24 @@ CORE_DEPENDS?=		apinger \
 			pecl-radius \
 			pftop \
 			phalcon \
-			php-suhosin \
-			php56-ctype \
-			php56-curl \
-			php56-dom \
-			php56-filter \
-			php56-gettext \
-			php56-hash \
-			php56-json \
-			php56-ldap \
-			php56-mcrypt \
-			php56-openssl \
-			php56-pdo \
-			php56-session \
-			php56-simplexml \
-			php56-sockets \
-			php56-sqlite3 \
-			php56-xml \
-			php56-zlib \
+			php-suhosin7 \
+			php70-ctype \
+			php70-curl \
+			php70-dom \
+			php70-filter \
+			php70-gettext \
+			php70-hash \
+			php70-json \
+			php70-ldap \
+			php70-mcrypt \
+			php70-openssl \
+			php70-pdo \
+			php70-session \
+			php70-simplexml \
+			php70-sockets \
+			php70-sqlite3 \
+			php70-xml \
+			php70-zlib \
 			py27-Jinja2 \
 			py27-netaddr \
 			py27-requests \
